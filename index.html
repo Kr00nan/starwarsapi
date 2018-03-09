@@ -7,8 +7,12 @@
   <title>Star Wars</title>
 </head>
 <body>
-  <div id="characters">
-
+  <form onsubmit="app.controllers.controller.getItems(event)">
+    <input type="radio" name="criteria" value="people"> People<br>
+    <input type="radio" name="criteria" value="planets"> Planets<br>
+    <input type="radio" name="criteria" value="starships"> Starships<br>
+    <input type="submit" value="Submit">
+  </form>
   </div>
 
   <!-- libraries -->

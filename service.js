@@ -1,12 +1,12 @@
 function Service(){
-  var characters;
+  var listing;
 
-  this.getCharacters = function (callBack){
+  this.getItems = function (callBack){
     console.log("making request")
     $.get("https://swapi.co/api/people/?page=1")
       .then( res =>{
-        characters = res.results
-        callBack(characters)
+        listing = res.results
+        callBack(listing)
       })
       .catch(err =>{
         console.log(err)
